@@ -1,1 +1,31 @@
+import java.util.Scanner;
 
+public class temperatura {
+void main() {
+    Scanner s = new Scanner(System.in);
+    IO.println("Qunatas temperaturas deseja analisar?");
+    int quantidade = s.nextInt();
+
+    double soma = 0;
+            for (int i = 1; i <= quantidade; i++) {
+
+                IO.println("Digite a temperatura" + i + ":");
+                double temperatura = s.nextInt();
+
+                soma = soma + temperatura;
+
+                if (temperatura < 18){
+                    IO.println("Frio");
+                } else {
+                    IO.println("Temperatura agradável");
+                }
+            }
+            double media = soma / quantidade;
+            IO.println("Media das temperaturas de SJC: " + media);
+            if (media < 18) {
+                IO.print ("Em geral, SJC é Frio");
+            }else {
+                IO.println ("Em geral, SJC tem uma temperatura Agradável");
+            }
+            }
+}
