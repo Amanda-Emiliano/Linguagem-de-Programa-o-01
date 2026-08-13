@@ -1,1 +1,24 @@
+import java.util.Scanner;
 
+public class Calculadora {
+    void main() {
+        Scanner s = new Scanner(System.in);
+
+        double gastoKmporL = 12;
+
+        IO.println("Digite quantos Km percorreu");
+        double distancia = s.nextDouble();
+
+        IO.println("Digite o valor do combustivel");
+        double preco = s.nextDouble();
+
+        double litros = distancia / gastoKmporL;
+        double valorgasto = litros * preco;
+
+        if (distancia > 500) {
+            valorgasto = valorgasto * 0.95;
+        }
+
+        IO.println("Valor gasto: " + valorgasto);
+    }
+}
