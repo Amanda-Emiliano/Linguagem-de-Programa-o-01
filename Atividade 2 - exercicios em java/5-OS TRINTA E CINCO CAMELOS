@@ -1,1 +1,29 @@
+import java.util.Scanner;
 
+public class camelos {
+    void main() {
+        Scanner s = new Scanner(System.in);
+
+        IO.println("Digite a quantidade de camelos:");
+        int camelos = s.nextInt();
+
+        IO.println("Digite a primeira parcela:");
+        int parcela1 = s.nextInt();
+
+        IO.println("Digite a segunda parcela:");
+        int parcela2 = s.nextInt();
+
+        IO.println("Digite a terceira parcela:");
+        int parcela3 = s.nextInt();
+
+        camelos = camelos + 1;
+
+        int primeiro = camelos / parcela1;
+        int segundo = camelos / parcela2;
+        int terceiro = camelos / parcela3;
+
+        IO.println("Primeiro irmão: " + primeiro);
+        IO.println("Segundo irmão: " + segundo);
+        IO.println("Terceiro irmão: " + terceiro);
+    }
+}
