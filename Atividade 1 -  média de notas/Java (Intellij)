@@ -1,1 +1,80 @@
+import java.util.Scanner;
 
+public class Main {
+    void main() {
+
+        Scanner s = new Scanner(System.in);
+
+        double P1, E1, E2, X, SUB, API, EXF;
+        double media1, diferenca;
+        double parteMedia, parteAPI, mediaFinal;
+
+        IO.println("Digite a nota da Prova 1:");
+        P1 = s.nextDouble();
+
+        IO.println("Digite a nota da Entrega 1:");
+        E1 = s.nextDouble();
+
+        IO.println("Digite a nota da Entrega 2:");
+        E2 = s.nextDouble();
+
+        IO.println("Digite a nota da Atividade Extra:");
+        X = s.nextDouble();
+
+        IO.println("Digite a nota da Substitutiva:");
+        SUB = s.nextDouble();
+
+        IO.println("Digite a nota da API:");
+        API = s.nextDouble();
+
+        IO.println("Digite a nota do Exame Final:");
+        EXF = s.nextDouble();
+
+
+        media1 = P1 * 0.5 + E1 * 0.2 + E2 * 0.3 + X + SUB * 0.15;
+
+        diferenca = media1 - 5.9;
+
+        parteMedia = media1 * 0.5;
+
+        if (diferenca > 0) {
+            parteAPI = (diferenca / diferenca) * API * 0.5;
+        } else {
+            parteAPI = 0;
+        }
+
+        mediaFinal = parteMedia + parteAPI;
+
+
+        IO.println("");
+        IO.println("Média final: " + mediaFinal);
+
+
+        if (mediaFinal >= 6) {
+
+            IO.println("Aluno aprovado!");
+
+        } else if (mediaFinal >= 4) {
+
+            IO.println("Aluno em recuperação.");
+            IO.println("Deve realizar o exame final.");
+
+            if (EXF > mediaFinal) {
+                mediaFinal = EXF;
+            }
+
+            IO.println("Média após o exame: " + mediaFinal);
+
+            if (mediaFinal >= 6) {
+                IO.println("Aluno aprovado!");
+            } else {
+                IO.println("Aluno reprovado.");
+            }
+
+        } else {
+
+            IO.println("Aluno reprovado.");
+            IO.println("Não pode realizar o exame final.");
+        }
+    }
+}
