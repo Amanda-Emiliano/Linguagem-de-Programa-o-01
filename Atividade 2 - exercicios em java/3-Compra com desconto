@@ -1,1 +1,78 @@
+import java.util.Scanner;
 
+public class Main {
+    void main() {
+
+        Scanner s = new Scanner(System.in);
+
+        double arroz, feijao, oleo, acucar, cafe;
+        double macarrao, farinha, fuba, molho, sal;
+
+        double total;
+        double desconto;
+        double valorFinal;
+
+        IO.println("Digite o preço do Arroz (5 kg):");
+        arroz = s.nextDouble();
+
+        IO.println("Digite o preço do Feijão (1 kg a 2 kg):");
+        feijao = s.nextDouble();
+
+        IO.println("Digite o preço do Óleo de soja (900 ml):");
+        oleo = s.nextDouble();
+
+        IO.println("Digite o preço do Açúcar (1 kg):");
+        acucar = s.nextDouble();
+
+        IO.println("Digite o preço do Café (250 g ou 500 g):");
+        cafe = s.nextDouble();
+
+        IO.println("Digite o preço do Macarrão (500 g):");
+        macarrao = s.nextDouble();
+
+        IO.println("Digite o preço da Farinha (1 kg ou 500 g):");
+        farinha = s.nextDouble();
+
+        IO.println("Digite o preço do Fubá (500 g):");
+        fuba = s.nextDouble();
+
+        IO.println("Digite o preço do Molho ou extrato de tomate (300 g):");
+        molho = s.nextDouble();
+
+        IO.println("Digite o preço do Sal (1 kg):");
+        sal = s.nextDouble();
+
+
+        total = arroz + feijao + oleo + acucar + cafe
+                + macarrao + farinha + fuba + molho + sal;
+
+
+        if (total > 100) {
+            desconto = total * 0.10;
+            valorFinal = total - desconto;
+        } else {
+            desconto = 0;
+            valorFinal = total;
+        }
+
+
+        IO.println("");
+        IO.println("VALOR");
+
+        IO.println("Arroz (5 kg) - R$ " + arroz);
+        IO.println("Feijão (1 kg a 2 kg) - R$ " + feijao);
+        IO.println("Óleo de soja (900 ml) - R$ " + oleo);
+        IO.println("Açúcar (1 kg) - R$ " + acucar);
+        IO.println("Café (250 g ou 500 g) - R$ " + cafe);
+        IO.println("Macarrão (500 g) - R$ " + macarrao);
+        IO.println("Farinha (1 kg ou 500 g) - R$ " + farinha);
+        IO.println("Fubá (500 g) - R$ " + fuba);
+        IO.println("Molho ou extrato de tomate (300 g) - R$ " + molho);
+        IO.println("Sal (1 kg) - R$ " + sal);
+
+        IO.println("");
+        IO.println("Valor da compra: R$ " + total);
+        IO.println("Desconto: R$ " + desconto);
+        IO.println("Valor final a pagar: R$ " + valorFinal);
+    }
+}
