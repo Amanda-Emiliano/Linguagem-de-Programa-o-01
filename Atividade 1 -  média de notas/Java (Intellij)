@@ -5,7 +5,7 @@ public class Main {
 
         Scanner s = new Scanner(System.in);
 
-        double P1, E1, E2, X, SUB, API, EXF;
+        double P1, E1, E2, X, SUB, API;
         double media1, diferenca;
         double parteMedia, parteAPI, mediaFinal;
 
@@ -26,9 +26,6 @@ public class Main {
 
         IO.println("Digite a nota da API:");
         API = s.nextDouble();
-
-        IO.println("Digite a nota do Exame Final:");
-        EXF = s.nextDouble();
 
 
         media1 = P1 * 0.5 + E1 * 0.2 + E2 * 0.3 + X + SUB * 0.15;
@@ -58,6 +55,9 @@ public class Main {
 
             IO.println("Aluno em recuperação.");
             IO.println("Deve realizar o exame final.");
+
+            IO.println("Digite a nota do Exame Final:");
+            double EXF = s.nextDouble();
 
             if (EXF > mediaFinal) {
                 mediaFinal = EXF;
