@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Aluguel {
+    public void aluguel() {
+        Scanner s = new Scanner(System.in);
+
+        IO.println("Digite a quantidade de dias de aluguel:");
+        int dias = s.nextInt();
+
+        IO.println("Digite quantos quilometros percorreu:");
+        double km = s.nextDouble();
+
+        double diaria = 200;
+        double limitekm = 100;
+        double valorextra = 5;
+
+        double total = dias * diaria;
+
+        if (km > limitekm) {
+            double kmExtra = km - limitekm;
+            total = total + (kmExtra * valorextra);
+        }
+
+        IO.println("Valor total do aluguel: R$ " + total);
+    }
+}
