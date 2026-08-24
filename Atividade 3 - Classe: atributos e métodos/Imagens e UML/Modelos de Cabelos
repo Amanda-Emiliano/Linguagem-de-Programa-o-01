@@ -1,0 +1,50 @@
+public class Modeloscabelo {
+
+    private String tipo;
+    private String caracteristicaCabelo;
+    private String estilo;
+
+    public Modeloscabelo(String tipo, String caracteristicaCabelo, String estilo) {
+        this.tipo = tipo;
+        this.caracteristicaCabelo = caracteristicaCabelo;
+        this.estilo = estilo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setCaracteristicaCabelo(String caracteristicaCabelo) {
+        this.caracteristicaCabelo = caracteristicaCabelo;
+    }
+
+    public String getCaracteristicaCabelo() {
+        return caracteristicaCabelo;
+    }
+
+    public void setEstilo(String estilo) {
+        this.estilo = estilo;
+    }
+
+    public String getEstilo() {
+        return estilo;
+    }
+
+
+    public void personalizar() {
+        System.out.println("O personagem foi personalizado.");
+    }
+
+    public void alterarCabelo() {
+        System.out.println("O cabelo do personagem foi alterado.");
+    }
+
+    public void exibirModelo() {
+        System.out.println("O modelo do personagem foi exibido.");
+    }
+
+}
