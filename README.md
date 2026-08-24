@@ -1,1 +1,1 @@
-Repositório destinado às atividades do Laboratório 1.
+Repositório destinado às atividades de Linguagem de Programacao I.
