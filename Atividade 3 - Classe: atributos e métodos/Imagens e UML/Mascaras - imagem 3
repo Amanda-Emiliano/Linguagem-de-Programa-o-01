@@ -1,0 +1,50 @@
+public class Mascaras {
+
+    private String origem;
+    private String material;
+    private String significadoCultural;
+
+
+    public Mascaras(String origem, String material, String significadoCultural) {
+        this.origem = origem;
+        this.material = material;
+        this.significadoCultural = significadoCultural;
+    }
+
+    public void setOrigem(String origem) {
+        this.origem = origem;
+    }
+
+    public String getOrigem() {
+        return origem;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setSignificadoCultural(String significadoCultural) {
+        this.significadoCultural = significadoCultural;
+    }
+
+    public String getSignificadoCultural() {
+        return significadoCultural;
+    }
+
+    public void exibirMascara() {
+        System.out.println("A máscara foi exibida.");
+    }
+
+    public void apresentarSignificado() {
+        System.out.println("O significado cultural da máscara foi apresentado.");
+    }
+
+    public void identificarOrigem() {
+        System.out.println("A origem da máscara foi identificada..");
+
+    }
+}
