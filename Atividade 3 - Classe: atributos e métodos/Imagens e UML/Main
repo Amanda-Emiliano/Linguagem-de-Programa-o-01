@@ -1,0 +1,28 @@
+public class Main {
+
+    void main() {
+
+        System.out.println("===== CICLISTA =====");
+
+        Ciclista c = new Ciclista("Vitoria", 19, true);
+        c.pedalar();
+        c.frear();
+        c.parar();
+
+        System.out.println();
+        System.out.println("===== MÁSCARA =====");
+
+        Mascaras m = new Mascaras("Africana", "Madeira", "Representação");
+        m.exibirMascara();
+        m.apresentarSignificado();
+        m.identificarOrigem();
+
+        System.out.println();
+        System.out.println("===== MODELO DE CABELO =====");
+
+        Modeloscabelo modelo = new Modeloscabelo("liso", "Cabelo curto", "Moderno");
+        modelo.personalizar();
+        modelo.alterarCabelo();
+        modelo.exibirModelo();
+    }
+}
