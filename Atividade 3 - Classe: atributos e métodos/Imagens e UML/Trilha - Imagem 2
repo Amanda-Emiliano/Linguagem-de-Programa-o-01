@@ -1,0 +1,48 @@
+public class Trilha {
+
+    private String localizacao;
+    private String tipoSolo;
+    private double distancia;
+
+    public Trilha(String localizacao, double distancia, String tipoSolo) {
+        this.localizacao = localizacao;
+        this.distancia = distancia;
+        this.tipoSolo = tipoSolo;
+    }
+
+    public void setLocalizacao(String localizacao) {
+        this.localizacao = localizacao;
+    }
+
+    public String getLocalizacao() {
+        return localizacao;
+    }
+
+    public void setTipoSolo(String tipoSolo) {
+        this.tipoSolo = tipoSolo;
+    }
+
+    public String getTipoSolo() {
+        return tipoSolo;
+    }
+
+    public void setDistancia(double distancia) {
+        this.distancia = distancia;
+    }
+
+    public double getDistancia() {
+        return distancia;
+    }
+
+    public void iniciarTrilha() {
+        System.out.println("A trilha foi iniciada.");
+    }
+
+    public void finalizarTrilha() {
+        System.out.println("A trilha foi finalizada.");
+    }
+
+    public void contarKm() {
+        System.out.println("Contando os quilômetros percorridos.");
+    }
+}
