@@ -1,0 +1,48 @@
+public class Ternos {
+
+    private String cor;
+    private Double preco;
+    private String material;
+
+    public Ternos(String cor, Double preco, String material) {
+        this.cor = cor;
+        this.preco = preco;
+        this.material = material;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setPreco(Double preco) {
+        this.preco = preco;
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void alugar() {
+        System.out.println("O terno foi alugado.");
+    }
+
+    public void ajustar() {
+        System.out.println("O terno foi ajustado.");
+    }
+
+    public void lavar() {
+        System.out.println("O terno foi lavado.");
+    }
+}
