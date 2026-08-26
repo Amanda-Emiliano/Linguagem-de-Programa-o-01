@@ -1,0 +1,48 @@
+public class Exibicao {
+
+    private String nome;
+    private String local;
+    private String duracao;
+
+    public Exibicao(String nome, String local, String duracao) {
+        this.nome = nome;
+        this.local = local;
+        this.duracao = duracao;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setLocal(String local) {
+        this.local = local;
+    }
+
+    public String getLocal() {
+        return local;
+    }
+
+    public void setDuracao(String duracao) {
+        this.duracao = duracao;
+    }
+
+    public String getDuracao() {
+        return duracao;
+    }
+
+    public void iniciarExibicao() {
+        System.out.println("A exibição foi iniciada.");
+    }
+
+    public void apresentarObjetos() {
+        System.out.println("Os objetos da exibição foram apresentados.");
+    }
+
+    public void explicarSignificado() {
+        System.out.println("O significado da exibição foi explicado.");
+    }
+}
