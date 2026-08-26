@@ -1,0 +1,48 @@
+public class Desenho {
+
+    private String titulo;
+    private String tecnica;
+    private String tamanho;
+
+    public Desenho(String titulo, String tecnica, String tamanho) {
+        this.titulo = titulo;
+        this.tecnica = tecnica;
+        this.tamanho = tamanho;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTecnica(String tecnica) {
+        this.tecnica = tecnica;
+    }
+
+    public String getTecnica() {
+        return tecnica;
+    }
+
+    public void setTamanho(String tamanho) {
+        this.tamanho = tamanho;
+    }
+
+    public String getTamanho() {
+        return tamanho;
+    }
+
+    public void desenhar() {
+        System.out.println("O desenho foi feito.");
+    }
+
+    public void colorir() {
+        System.out.println("O desenho foi colorido.");
+    }
+
+    public void finalizarDesenho() {
+        System.out.println("O desenho foi finalizado.");
+    }
+}
