@@ -18,11 +18,83 @@ public class Main {
         m.identificarOrigem();
 
         System.out.println();
-        System.out.println("===== MODELO DE CABELO =====");
+        System.out.println("===== TRILHA =====");
 
-        Modeloscabelo modelo = new Modeloscabelo("liso", "Cabelo curto", "Moderno");
-        modelo.personalizar();
-        modelo.alterarCabelo();
-        modelo.exibirModelo();
+        Trilha t = new Trilha("São Paulo", 5.5, "Terra");
+        t.iniciarTrilha();
+        t.contarKm();
+        t.finalizarTrilha();
+
+        System.out.println();
+        System.out.println("===== ÁRVORES =====");
+
+        Arvores a = new Arvores(10, "Brasil", "Ipê");
+        a.crescer();
+        a.produzirFrutos();
+        a.perderFolhas();
+
+        System.out.println();
+        System.out.println("===== EXIBIÇÃO =====");
+
+        Exibicao e = new Exibicao("Arte Cultural", "Museu", "2 horas");
+        e.iniciarExibicao();
+        e.apresentarObjetos();
+        e.explicarSignificado();
+
+        System.out.println();
+        System.out.println("===== PINTURAS =====");
+
+        Pinturas p = new Pinturas("Azul e vermelho", "Brasileira", "Aquarela");
+        p.exibirCores();
+        p.apresentarCultura();
+        p.identificarTecnica();
+
+        System.out.println();
+        System.out.println("===== PERSONAGENS =====");
+
+        Personagens personagem = new Personagens("Herói", 180, "Atlético");
+        personagem.personalizar();
+        personagem.desenhar();
+        personagem.definirAparencia();
+
+        System.out.println();
+        System.out.println("===== CABELOS =====");
+
+        Cabelos cabelo = new Cabelos("Preto", "Médio", "Cacheado");
+        cabelo.cortarCabelo();
+        cabelo.pentearCabelo();
+        cabelo.pintarCabelo();
+
+        System.out.println();
+        System.out.println("===== DESENHO =====");
+
+        Desenho d = new Desenho("Rostos", "Pontilhado", "A4");
+        d.desenhar();
+        d.colorir();
+        d.finalizarDesenho();
+
+        System.out.println();
+        System.out.println("===== CAMISAS =====");
+
+        Camisas camisa = new Camisas("Azul", "M", "Nike");
+        camisa.vestir();
+        camisa.lavarCamisa();
+        camisa.dobrar();
+
+        System.out.println();
+        System.out.println("===== TERNOS =====");
+
+        Ternos terno = new Ternos("Preto", 350.00, "Lã");
+        terno.alugar();
+        terno.ajustar();
+        terno.lavar();
+
+        System.out.println();
+        System.out.println("===== FUNCIONÁRIO =====");
+
+        Funcionario funcionario = new Funcionario("Vitoria", "Gerente", 3500.00);
+        funcionario.trabalhar();
+        funcionario.receberSalario();
+        funcionario.registrarPonto();
     }
 }
