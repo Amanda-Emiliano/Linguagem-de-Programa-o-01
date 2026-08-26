@@ -1,0 +1,48 @@
+public class Personagens {
+
+    private String nome;
+    private int altura;
+    private String tipoCorpo;
+
+    public Personagens(String nome, int altura, String tipoCorpo) {
+        this.nome = nome;
+        this.altura = altura;
+        this.tipoCorpo = tipoCorpo;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setTipoCorpo(String tipoCorpo) {
+        this.tipoCorpo = tipoCorpo;
+    }
+
+    public String getTipoCorpo() {
+        return tipoCorpo;
+    }
+
+    public void personalizar() {
+        System.out.println("O personagem foi personalizado.");
+    }
+
+    public void desenhar() {
+        System.out.println("O personagem foi desenhado.");
+    }
+
+    public void definirAparencia() {
+        System.out.println("A aparência do personagem foi definida.");
+    }
+}
