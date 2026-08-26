@@ -1,0 +1,48 @@
+public class Pinturas {
+
+    private String cores;
+    private String cultura;
+    private String tecnica;
+
+    public Pinturas(String cores, String cultura, String tecnica) {
+        this.cores = cores;
+        this.cultura = cultura;
+        this.tecnica = tecnica;
+    }
+
+    public void setCores(String cores) {
+        this.cores = cores;
+    }
+
+    public String getCores() {
+        return cores;
+    }
+
+    public void setCultura(String cultura) {
+        this.cultura = cultura;
+    }
+
+    public String getCultura() {
+        return cultura;
+    }
+
+    public void setTecnica(String tecnica) {
+        this.tecnica = tecnica;
+    }
+
+    public String getTecnica() {
+        return tecnica;
+    }
+
+    public void exibirCores() {
+        System.out.println("As cores da pintura foram exibidas.");
+    }
+
+    public void apresentarCultura() {
+        System.out.println("A cultura da pintura foi apresentada.");
+    }
+
+    public void identificarTecnica() {
+        System.out.println("A técnica da pintura foi identificada.");
+    }
+}
