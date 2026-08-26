@@ -1,0 +1,48 @@
+public class Arvores {
+
+    private int altura;
+    private String localizacao;
+    private String especie;
+
+    public Arvores(int altura, String localizacao, String especie) {
+        this.altura = altura;
+        this.localizacao = localizacao;
+        this.especie = especie;
+    }
+
+    public void setAltura(int altura) {
+        this.altura = altura;
+    }
+
+    public int getAltura() {
+        return altura;
+    }
+
+    public void setLocalizacao(String localizacao) {
+        this.localizacao = localizacao;
+    }
+
+    public String getLocalizacao() {
+        return localizacao;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void crescer() {
+        System.out.println("A árvore está crescendo.");
+    }
+
+    public void produzirFrutos() {
+        System.out.println("A árvore está produzindo frutos.");
+    }
+
+    public void perderFolhas() {
+        System.out.println("A árvore está perdendo folhas.");
+    }
+}
